@@ -1,2 +1,2 @@
 # BMI-Calculator
-![healthy meal](https://pixabay.com/photos/diet-vernier-sandwich-695723/)
+![healthy meal](diet-695723_1920)
