@@ -1,2 +1,2 @@
 # BMI-Calculator
-![healthy meal](diet-695723_1920)
+![healthy meal](diet-695723_1920.jpg)
