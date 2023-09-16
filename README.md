@@ -1,2 +1,2 @@
 # BMI-Calculator
-![exercising lady](diet-695723_1920.jpg)
+![healthy meal](https://pixabay.com/photos/diet-vernier-sandwich-695723/)
