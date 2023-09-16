@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my flask web application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">      
+</head>
+<body>
+    
+    <div class="form">
+        <h1>BMI Calculator</h1>
+        <form action="/submit" method="POST">
+            <label for="height">Height</label><br>
+            <input type="text" name="height" id="height" placeholder="Enter your height in cm" required><br><br>
+            <label for="weight">Weight</label><br>
+            <input type="text" name="weight" id="weight" placeholder="Enter your weight in kg" required><br><br>
+            <button type="submit">Calculate</button>
+        </form> 
+
+        <div class="response">
+            {% if BMI %}
+                <p>Your BMI is {{ BMI }}kg/m2</p>
+            {% endif %}
+            <div class="underweight">
+                {% if BMI %}
+                    {% if BMI < 18.5 %}
+                        <h3>You are {{status}}</h3>
+                        
+
+                        </div>
+                    {% endif %}
+                {% endif %}
+            </div>
+            <div class="normal">
+                {% if BMI %}
+                    {% if BMI >= 18.5 and BMI <= 24.9 %}
+                        <h3>You are {{status}}</h3>
+                    {% endif %}
+                {% endif %}
+            </div>
+            
+            <div class="overweight">
+            {% if BMI %}
+                {% if BMI >= 25 and BMI <= 29.9 %}
+                    <h3>You are {{status}}</h3>
+                {% endif %}
+            {% endif %}
+            </div>
+            <div class="obese">
+                {% if BMI %}
+                    {% if BMI >= 30 %}
+                        <h3>You are {{status}}</h3>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    
+    </div>
+
+    <br>
+
+    
+    
+    
+   
+
+
+    
+
+
+</body>
+</html>
